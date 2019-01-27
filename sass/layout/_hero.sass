@@ -1,0 +1,67 @@
+header
+    background-color: rgba(0, 0, 0, .6)
+    background-image:url(../img/hero.jpg)
+    height: 100vh
+    background-size: cover 
+    background-position: center
+    background-blend-mode: multiply
+    display: flex
+    align-items: center
+    .hero-box
+        text-align: left
+        width: 90%
+        margin: 0 auto
+
+    img
+        height: 300px
+        width: 300px
+    nav
+        color: #fff
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        display: flex
+        align-items: center
+        img
+            height: 180px
+            transform: scale(.85)
+            width: auto
+            max-width: 100%
+            border-radius: 49%
+            flex: 1
+            margin-left: 2em
+            margin-top: .5em
+            border: 2px solid $main
+            box-shadow: 0 0 5px 0 #eaeaea
+        ul
+            text-align: right
+            flex: 9
+            width: 80%
+            padding-right: .5em
+            &:hover li 
+                transform: scale(1.1)
+                opacity: .6
+                filter: blur(3px)
+            li
+                list-style-type: none
+                display: inline-block
+                margin-right: 1em
+                transition: all .6s
+                &:hover
+                    transform: scale(1.3)
+                    opacity: 1
+                    filter: blur(0)
+                a 
+                    cursor: pointer
+                    padding: .5rem
+                    background-color: none
+                    transition: all .8s
+                    padding: .25rem
+                    &:hover
+                        background-color: $main
+                        border-radius: 5px
+                    
+                        
+                    
+

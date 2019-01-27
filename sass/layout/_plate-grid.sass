@@ -1,0 +1,28 @@
+.plate-grid
+    background-color: grey
+    margin-top: 2.5em
+    position: relative
+    display: block
+    clear: both
+    width: 100%
+    display: grid
+    grid-gap: 5px
+    grid-template-columns: repeat(4, 1fr)
+    @media(max-width: 800px)
+        grid-template-columns: repeat(2, 1fr)
+    figure 
+        padding: 0
+        height: auto
+        img
+            display: block
+            height: 280px
+            width: 100%
+            transform: scale(1.02)
+            transition: .8s
+            opacity: .75
+            &:hover
+                transform: scale(1)
+                opacity: 1
+            @media(max-width: 800px)
+                transform: none
+    

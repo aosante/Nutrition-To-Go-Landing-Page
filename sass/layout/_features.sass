@@ -1,0 +1,32 @@
+.features
+    height: auto
+    h2
+        margin-top: 1em
+        position: relative
+        &::after
+            content: ''
+            height: 2px
+            width: 15%
+            background-color: $main
+            display: block    
+            margin: 0 auto
+            margin-top: .6em 
+    p.feature-p
+        padding: .5em 1em
+        width: 76%
+        margin: 0 auto
+        margin-top: 2em
+.cards
+    display: flex
+    width: 95%
+    margin: 0 auto
+    margin-top: 2em
+    .feature-card
+        margin: .5em 
+        flex: 1  
+        padding: 0 1.5em
+        text-align: left
+        .icon
+            color: $main
+            font-size: 3.5em
+            margin-bottom: .25em
