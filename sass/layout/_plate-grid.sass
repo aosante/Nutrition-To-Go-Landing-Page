@@ -6,23 +6,24 @@
     clear: both
     width: 100%
     display: grid
-    grid-gap: 5px
+    // grid-gap: 5px
     grid-template-columns: repeat(4, 1fr)
     @media(max-width: 800px)
         grid-template-columns: repeat(2, 1fr)
     figure 
         padding: 0
         height: auto
+        overflow: hidden
         img
             display: block
             height: 280px
             width: 100%
-            transform: scale(1.02)
+            transform: scale(1.2)
             transition: .8s
             opacity: .75
             &:hover
-                transform: scale(1)
+                transform: scale(.9995)
                 opacity: 1
             @media(max-width: 800px)
-                transform: none
+                transform: unset
     

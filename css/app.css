@@ -340,7 +340,8 @@ h2 {
   font-size: 2.5em;
   font-weight: 300;
   word-spacing: 3px;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  margin-top: 1em; }
 
 h3 {
   color: #555555;
@@ -388,7 +389,7 @@ header {
     display: flex;
     align-items: center; }
     header nav img {
-      height: 180px;
+      height: 150px;
       transform: scale(0.85);
       width: auto;
       max-width: 100%;
@@ -413,7 +414,7 @@ header {
         margin-right: 1em;
         transition: all .6s; }
         header nav ul li:hover {
-          transform: scale(1.3);
+          transform: scale(1.25);
           opacity: 1;
           filter: blur(0); }
         header nav ul li a {
@@ -468,27 +469,83 @@ header {
   clear: both;
   width: 100%;
   display: grid;
-  grid-gap: 5px;
   grid-template-columns: repeat(4, 1fr); }
   @media (max-width: 800px) {
     .plate-grid {
       grid-template-columns: repeat(2, 1fr); } }
   .plate-grid figure {
     padding: 0;
-    height: auto; }
+    height: auto;
+    overflow: hidden; }
     .plate-grid figure img {
       display: block;
       height: 280px;
       width: 100%;
-      transform: scale(1.02);
+      transform: scale(1.2);
       transition: .8s;
       opacity: .75; }
       .plate-grid figure img:hover {
-        transform: scale(1);
+        transform: scale(0.9995);
         opacity: 1; }
       @media (max-width: 800px) {
         .plate-grid figure img {
-          transform: none; } }
+          transform: unset; } }
+
+.how-it-works {
+  height: auto;
+  background-color: #f4f4f4; }
+  .how-it-works h2 {
+    margin-top: 1em;
+    position: relative; }
+    .how-it-works h2::after {
+      content: '';
+      height: 2px;
+      width: 15%;
+      background-color: #b3c858;
+      display: block;
+      margin: 0 auto;
+      margin-top: .6em; }
+  .how-it-works .how-it-works-container {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+    padding: 3em;
+    margin-bottom: 3em; }
+    .how-it-works .how-it-works-container img {
+      width: 30%;
+      height: 40%;
+      align-self: center; }
+    .how-it-works .how-it-works-container .steps {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      margin-left: 2em; }
+      .how-it-works .how-it-works-container .steps .step {
+        display: flex;
+        margin-bottom: 3em;
+        align-items: center; }
+        .how-it-works .how-it-works-container .steps .step:last-of-type {
+          margin-bottom: 0; }
+        .how-it-works .how-it-works-container .steps .step p {
+          text-align: left;
+          height: 100%;
+          flex: 2; }
+        .how-it-works .how-it-works-container .steps .step span {
+          font-size: 1.6em;
+          height: auto;
+          margin-right: 1em;
+          display: block;
+          align-self: flex-start;
+          color: #b3c858;
+          border: 2px solid #b3c858;
+          border-radius: 50%;
+          padding: .7rem;
+          flex: .15; }
+      .how-it-works .how-it-works-container .steps .download-imgs img:hover {
+        cursor: pointer; }
 
 .btn {
   border: 1px solid #b3c858;

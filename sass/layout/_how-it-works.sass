@@ -1,0 +1,60 @@
+.how-it-works
+    height: auto
+    background-color: $darker-bg
+    h2
+        margin-top: 1em
+        position: relative
+        &::after
+            content: ''
+            height: 2px
+            width: 15%
+            background-color: $main
+            display: block    
+            margin: 0 auto
+            margin-top: .6em 
+    .how-it-works-container
+        display: flex
+        justify-content: center
+        width: 70%
+        margin: 0 auto
+        height: auto
+        padding: 3em
+        margin-bottom: 3em
+        img
+            width: 30%
+            height: 40%
+            align-self: center
+        .steps
+            align-self: center
+            display: flex
+            flex-direction: column
+            width: 70%
+            margin-left: 2em
+            .step
+                display: flex
+                margin-bottom: 3em
+                align-items: center
+                &:last-of-type
+                    margin-bottom: 0
+                p
+                    text-align: left
+                    height: 100%
+                    flex: 2
+                span
+                    font-size: 1.6em
+                    height: auto
+                    margin-right: 1em
+                    display: block
+                    align-self: flex-start
+                    color: $main
+                    border: 2px solid $main
+                    border-radius: 50%
+                    padding: .7rem
+                    flex: .15
+            .download-imgs img:hover
+                cursor: pointer
+
+                
+            
+            
+                
