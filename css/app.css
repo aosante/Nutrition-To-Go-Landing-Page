@@ -547,6 +547,33 @@ header {
       .how-it-works .how-it-works-container .steps .download-imgs img:hover {
         cursor: pointer; }
 
+.cities {
+  height: auto;
+  padding: 1em 3em 5em; }
+  .cities h2 {
+    margin-top: 1em;
+    position: relative; }
+    .cities h2::after {
+      content: '';
+      height: 2px;
+      width: 15%;
+      background-color: #b3c858;
+      display: block;
+      margin: 0 auto;
+      margin-top: .6em; }
+  .cities .city-cards {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 5em auto 0em; }
+    .cities .city-cards .city-info img {
+      height: 10em;
+      width: 16em;
+      margin-bottom: 1em;
+      box-shadow: 0 0 5px 0 #000; }
+    .cities .city-cards .city-info ul li {
+      list-style-type: none; }
+
 .btn {
   border: 1px solid #b3c858;
   padding: 10px 30px;
