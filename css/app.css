@@ -407,6 +407,20 @@ input::placeholder, textarea::placeholder {
   font-size: 1.2em;
   font-weight: 300; }
 
+.links-title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1em; }
+
+.footer-icon {
+  font-size: 2.5em;
+  color: grey; }
+
+.copy-right {
+  font-size: 1em;
+  text-align: right;
+  padding-right: 2em; }
+
 header {
   background-color: rgba(0, 0, 0, 0.6);
   background-image: url(../img/hero.jpg);
@@ -755,7 +769,50 @@ header {
         font-weight: 300; }
 
 footer {
-  border: 2px solid red; }
+  display: flex;
+  background-color: #333;
+  height: 43vh;
+  align-items: center; }
+  footer .links {
+    color: grey;
+    width: 50%;
+    border-right: 1px solid grey;
+    text-align: left;
+    padding-left: 10em; }
+    footer .links .links-title {
+      border-bottom: 1px ridge grey;
+      padding: 1em 0;
+      width: 80%; }
+    footer .links ul {
+      margin-bottom: 1em; }
+      footer .links ul li a {
+        color: grey;
+        text-decoration: none; }
+        footer .links ul li a:hover {
+          color: #fff; }
+  footer .social-media {
+    width: 50%;
+    color: grey; }
+    footer .social-media .instagram:hover {
+      color: #c9303d;
+      transform: scale(1.1); }
+    footer .social-media .facebook:hover {
+      color: #3d5593;
+      transform: scale(1.1); }
+    footer .social-media .twitter:hover {
+      color: #409cdf;
+      transform: scale(1.1); }
+    footer .social-media .linkedin:hover {
+      color: #2e77b0;
+      transform: scale(1.1); }
+
+.copy-right span {
+  color: #b3c858;
+  opacity: .7; }
+
+footer ul li {
+  list-style-type: none;
+  margin-bottom: .25em; }
 
 .btn {
   border: 1px solid #b3c858;

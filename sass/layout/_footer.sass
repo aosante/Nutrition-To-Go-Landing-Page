@@ -1,2 +1,45 @@
 footer
-    border: 2px solid red
+    display: flex
+    background-color: $footer-bg
+    height: 43vh
+    align-items: center
+    .links
+        color: grey
+        width: 50%
+        border-right: 1px solid grey
+        text-align: left
+        padding-left: 10em
+        .links-title
+            border-bottom: 1px ridge grey
+            padding: 1em 0
+            width: 80%
+        ul
+            margin-bottom: 1em
+            li a
+                color: grey
+                text-decoration: none
+                &:hover
+                    color: $secondary
+    .social-media
+        width: 50%
+        color: grey
+        .instagram:hover
+            color: $instagram
+            transform: scale(1.1)
+        .facebook:hover
+            color: $facebook
+            transform: scale(1.1)
+        .twitter:hover
+            color: $twitter
+            transform: scale(1.1)
+        .linkedin:hover
+            color: $linkedin
+            transform: scale(1.1)
+
+.copy-right span
+    color: $main
+    opacity: .7
+
+footer ul li
+    list-style-type: none
+    margin-bottom: .25em
