@@ -1,0 +1,38 @@
+.contact-us
+    h2
+        margin-top: 1em
+        position: relative
+        &::after
+            content: ''
+            height: 2px
+            width: 15%
+            background-color: $main
+            display: block    
+            margin: 0 auto
+            margin-top: .6em 
+        
+    form
+        width: 50%
+        margin: 4em auto 
+        .input-group
+            display: flex
+            justify-content: center
+            margin-bottom: 1em
+            span
+            label
+                flex: 1
+                text-align: left
+            input, textarea, select
+                padding: .5em .3em 
+                flex: 2
+            .checkbox-div
+                flex: 2
+                text-align: left
+                span
+                    margin-left: 1em
+                    font-size: 1.2em
+                    font-weight: $font-light
+        
+
+
+            

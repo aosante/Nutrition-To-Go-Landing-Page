@@ -379,6 +379,34 @@ blockquote {
 cite {
   font-size: 1.1em; }
 
+.quote {
+  font-size: 4em;
+  color: #fff;
+  font-style: italic; }
+
+.price-plan li {
+  list-style-type: none;
+  font-size: 1.2em;
+  color: #555555;
+  font-weight: 300; }
+
+.plan-price {
+  font-size: 3.5em;
+  color: #b3c858; }
+  .plan-price span {
+    font-size: 1.2rem; }
+
+.plan-meal {
+  font-size: 1.1em; }
+
+label, option {
+  font-size: 1.2em;
+  font-weight: 300; }
+
+input::placeholder, textarea::placeholder {
+  font-size: 1.2em;
+  font-weight: 300; }
+
 header {
   background-color: rgba(0, 0, 0, 0.6);
   background-image: url(../img/hero.jpg);
@@ -649,11 +677,85 @@ header {
         .testimonial-container .testimonial-card cite img:hover {
           transform: scale(1.1); }
     .testimonial-container .testimonial-card .quote {
-      color: #fff;
       align-self: flex-start;
-      font-size: 4em;
-      height: 1em;
-      font-style: italic; }
+      height: 1em; }
+
+.pricing-plans {
+  background-color: #f4f4f4;
+  padding: 1em 2em 5em; }
+  .pricing-plans h2 {
+    margin-top: 1em;
+    position: relative; }
+    .pricing-plans h2::after {
+      content: '';
+      height: 2px;
+      width: 15%;
+      background-color: #b3c858;
+      display: block;
+      margin: 0 auto;
+      margin-top: .6em; }
+  .pricing-plans .plans-container {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto; }
+    .pricing-plans .plans-container .price-plan {
+      border-radius: 5px;
+      background-color: #fff;
+      text-align: left;
+      width: 30%; }
+      .pricing-plans .plans-container .price-plan div {
+        padding: .6em 1em; }
+      .pricing-plans .plans-container .price-plan div:last-child {
+        padding: 1.3em 2em;
+        text-align: center; }
+      .pricing-plans .plans-container .price-plan div:not(:last-child) {
+        border-bottom: 2px solid #f4f4f4; }
+      .pricing-plans .plans-container .price-plan .plan-price {
+        margin: 0;
+        margin-bottom: 1rem; }
+      .pricing-plans .plans-container .price-plan li {
+        margin-bottom: .5em; }
+      .pricing-plans .plans-container .price-plan li ion-icon {
+        color: #b3c858;
+        font-size: .8em;
+        margin-right: .5em; }
+
+.contact-us h2 {
+  margin-top: 1em;
+  position: relative; }
+  .contact-us h2::after {
+    content: '';
+    height: 2px;
+    width: 15%;
+    background-color: #b3c858;
+    display: block;
+    margin: 0 auto;
+    margin-top: .6em; }
+
+.contact-us form {
+  width: 50%;
+  margin: 4em auto; }
+  .contact-us form .input-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em; }
+    .contact-us form .input-group label {
+      flex: 1;
+      text-align: left; }
+    .contact-us form .input-group input, .contact-us form .input-group textarea, .contact-us form .input-group select {
+      padding: .5em .3em;
+      flex: 2; }
+    .contact-us form .input-group .checkbox-div {
+      flex: 2;
+      text-align: left; }
+      .contact-us form .input-group .checkbox-div span {
+        margin-left: 1em;
+        font-size: 1.2em;
+        font-weight: 300; }
+
+footer {
+  border: 2px solid red; }
 
 .btn {
   border: 1px solid #b3c858;
@@ -665,13 +767,16 @@ header {
 .btn-primary {
   color: #fff;
   background-color: #b3c858;
-  transition: opacity .8s; }
+  transition: opacity .5s; }
   .btn-primary:hover {
     opacity: .8; }
 
 .btn-secondary {
   color: #b3c858;
-  transition: background-color .8s; }
+  transition: background-color .5s; }
   .btn-secondary:hover {
     background-color: #b3c858;
     color: #fff; }
+
+button:hover {
+  cursor: pointer; }
