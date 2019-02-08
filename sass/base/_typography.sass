@@ -11,6 +11,8 @@ h1
     letter-spacing: 1px
     font-size: 3em
     font-weight: $font-light
+    @media(max-width: 980px)
+        font-size: 2em
 
 h2
     color: $dark-text
@@ -20,12 +22,24 @@ h2
     word-spacing: 3px
     letter-spacing: 2px
     margin-top: 1em
+    @media(max-width: 980px)
+        font-size: 1.7em
+    @media(max-width: 560px)
+        font-size: 1.2em
+        width: 80%
+        margin: 0 auto
 
 
 h3
     color: $dark-text
     font-size: 1.5em
     text-transform: uppercase
+    font-weight: $font-light
+    @media(max-width: 980px)
+        font-size: 1.25em
+
+li
+    font-size: 1.2em
     font-weight: $font-light
 
 
@@ -34,20 +48,20 @@ h3
     font-size: 1.2em   
 
 .main-nav li
-    font-size: 1.2em
-    font-weight: $font-light
     letter-spacing: .2rem
     text-transform: uppercase
+    @media(max-width: 960px)
+        font-size: .8em
 
 p
     color: $dark-text
     font-size: 1.2em
     font-weight: $font-light
+    @media(max-width: 980px)
+        font-size: 1em
 
 .city-info li
     color: $dark-text
-    font-size: 1.2em
-    font-weight: $font-light
 
 blockquote, cite
     color: $light-text
@@ -55,6 +69,7 @@ blockquote, cite
 
 blockquote
     font-size: 1.2em
+    font-style: italic
 
 cite
     font-size: 1.1em
@@ -64,11 +79,11 @@ cite
     color: $light-text
     font-style: italic
 
-.price-plan li
+.price-plan ul li
     list-style-type: none
-    font-size: 1.2em
-    color: $dark-text    
-    font-weight: $font-light
+    color: $dark-text 
+    @media(max-width: 1080px)
+        font-size: 1em
 
 .plan-price
     font-size: 3.5em
@@ -81,10 +96,14 @@ cite
 label, option
     font-size: 1.2em
     font-weight: $font-light
+    @media(max-width: 780px)
+        font-size: 1em
 
 input::placeholder, textarea::placeholder
     font-size: 1.2em
     font-weight: $font-light
+    @media(max-width: 780px)
+        font-size: 1em
 
 .links-title
     color: $secondary
@@ -99,3 +118,7 @@ input::placeholder, textarea::placeholder
     font-size: 1em
     text-align: right
     padding-right: 2em
+
+footer  li
+    @media(max-width: 580px)
+        font-size: 1em

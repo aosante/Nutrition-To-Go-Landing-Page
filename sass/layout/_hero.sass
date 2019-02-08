@@ -11,10 +11,18 @@ header
         text-align: left
         width: 90%
         margin: 0 auto
-
-    img
-        height: 300px
-        width: 300px
+        .menu-toggle
+            display: none
+        @media(max-width: 980px)
+            text-align: center
+        .hero-btns
+            display: flex
+            @media(max-width: 770px)
+                justify-content: center
+            @media(max-width: 470px)
+                flex-direction: column
+                width: 70%
+                margin: 0 auto
     nav
         color: #fff
         position: absolute
@@ -22,18 +30,24 @@ header
         left: 0
         width: 100%
         display: flex
-        align-items: center
+        align-items: center  
         img
-            height: 150px
+            height: 10em
+            max-height: 150px
             transform: scale(.85)
-            width: auto
-            max-width: 100%
+            max-width: 300px
             border-radius: 49%
             flex: 1
             margin-left: 2em
             margin-top: .5em
             border: 2px solid $main
             box-shadow: 0 0 5px 0 #eaeaea
+            @media(max-width: 770px)
+                height: 8em
+                max-width: 150px    
+            @media(max-width: 570px)
+                height: 6em
+                max-width: 100px
         ul
             text-align: right
             flex: 9
@@ -62,6 +76,63 @@ header
                         background-color: $main
                         border-radius: 5px
                     
-                        
-                    
-
+//hamburger menu media query                        
+@media(max-width: 760px)
+    .main-nav
+        position: absolute
+        display: flex
+        flex-direction: column
+        width: 65%
+        flex: 2
+        left: -40em
+        text-align: center
+        top: 0
+        height: 70vh
+        transition: left ease-in-out 500ms
+        border-radius: 4px
+        li
+            flex: 1
+            background-color: $main
+            opacity: .95
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            &:not(:last-child)
+                border-bottom: 2px solid $secondary
+            a
+                padding: 2em
+  
+        &:hover li
+            transform: unset
+            opacity: unset
+            filter: unset
+            a:hover
+                background-color: unset
+    .menu-toggle                 
+        display: block
+        position: absolute
+        padding: 1em
+        right: 0.5em
+        top: 1em
+        cursor: pointer
+        .hamburger, .hamburger::before, .hamburger::after
+            content: ''
+            display: block
+            background-color: $secondary
+            height: 3px
+            width: 1.75em
+            border-radius: 3px
+        .hamburger::before
+            transform: translateY(-8px)
+        .hamburger::after
+            transform: translateY(5px)
+    //open classes for toggling menu
+    .main-nav-open
+        left: 0
+    .open .hamburger
+        transform: rotate(-45deg)
+    .open .hamburger::before
+        opacity: 0
+    .open .hamburger::after
+        transform: translateY(-3px) rotate(-450deg)

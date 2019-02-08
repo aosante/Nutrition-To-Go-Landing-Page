@@ -14,14 +14,29 @@
             margin-top: .6em 
     .plans-container
         display: flex
-        justify-content: space-around
-        width: 90%
+        justify-content: space-between
+        width: 85%
         margin: 0 auto
+        @media(max-width: 1150px)
+            width: 100%
+        @media(max-width: 980px)
+            margin-top: 2em
+        @media(max-width: 770px)
+            flex-direction: column
+            align-items: center
         .price-plan
             border-radius: 5px
             background-color: #fff
             text-align: left
             width: 30%
+            box-shadow: 0 0 10px #000
+            @media(max-width: 930px)
+                width: 31.5%
+            @media(max-width: 770px)
+                width: 90%
+                flex-grow: 4
+                &:not(:last-child)
+                    margin-bottom: 2em
             div
                 padding: .6em 1em
             div:last-child
@@ -38,6 +53,6 @@
                 color: $main
                 font-size: .8em
                 margin-right: .5em
-             
+                
            
         

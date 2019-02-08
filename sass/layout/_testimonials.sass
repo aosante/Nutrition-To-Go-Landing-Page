@@ -8,7 +8,6 @@
         background-size: auto
         background-blend-mode: multiply
         background-position: center 
-        // background-attachment: fixed
         @media(max-width: 940px)
             background-size: cover
         h2
@@ -26,13 +25,21 @@
 
 .testimonial-container
     display: flex
-    padding: 2em 1em
-    justify-content: space-between    
+    padding: 1em 1em 2em
+    justify-content: space-between 
+    @media(max-width: 770px)
+        flex-direction: column
+        align-items: center
+        justify-content: center
     .testimonial-card
         text-align: left
         width: 30%
         display: flex
         flex-wrap: wrap
+        @media(max-width: 770px)
+            width: 100%
+            &:not(:last-child)
+                margin-bottom: 1em
         & > *
             flex-basis: 100%
         blockquote
@@ -40,6 +47,7 @@
         cite
             color: $font-light
             align-self: flex-end
+            display: flex
             img
                 width: 4em
                 height: 4em

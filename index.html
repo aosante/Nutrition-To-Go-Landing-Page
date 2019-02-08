@@ -21,11 +21,16 @@
           <li><a>Provincias</a></li>
           <li><a>Registráte</a></li>
         </ul>
+        <div class="menu-toggle">
+          <div class="hamburger"></div>
+        </div>
       </nav>
       <div class="hero-box">
         <h1>Cumplí las metas para tu cuerpo,<br />Nosotros te cubrimos</h1>
-        <a href="#" class="btn btn-primary">Tengo hambre</a>
-        <a href="#" class="btn btn-secondary">Más información</a>
+        <div class="hero-btns">
+          <a href="#" class="btn btn-primary">Tengo hambre</a>
+          <a href="#" class="btn btn-secondary">Más información</a>
+        </div>
       </div>
     </header>
     <main>
@@ -63,9 +68,8 @@
             <h3>Cómida Orgánica</h3>
             <p>
               Cómida 100% orgánica, con ingredientes orgánicos también. Comer
-              saludable no solo se trata de comer lo correcto, sino que también
-              se trata de saber de donde provienen dichas comidas, así como de
-              conocer su respectivo proceso de producción.
+              saludable no solo se trata de comer lo correcto, también se trata
+              de conocer el proceso y origen de la comida.
             </p>
           </div>
           <div class="feature-card">
@@ -99,7 +103,7 @@
       <section class="how-it-works">
         <h2>¿Cómo funciona? &mdash; Así de fácil</h2>
         <div class="how-it-works-container">
-          <img src="./img/phone.png" alt="IPhone image" />
+          <img class="phone" src="./img/phone.png" alt="IPhone image" />
           <div class="steps">
             <!-- paragraphs need to be set to display inline   -->
             <div class="step">
@@ -118,8 +122,8 @@
               <p>Esperá tu deliciosa comida desde la comodidad de tu casa</p>
             </div>
             <div class="download-imgs">
-              <img src="./img/app-store.svg" alt="" />
-              <img src="./img/google-play.svg" alt="" />
+              <img class="app-img" src="./img/app-store.svg" alt="" />
+              <img class="app-img" src="./img/google-play.svg" alt="" />
             </div>
           </div>
         </div>
@@ -263,7 +267,7 @@
             <div>
               <h3>Premium</h3>
               <p class="plan-price">$300 <span>/ mes</span></p>
-              <p class="plan-meal">Equivale a solo $8 por comida</p>
+              <p class="plan-meal">Solo $8 /comida</p>
             </div>
             <div>
               <ul>
@@ -275,7 +279,9 @@
                 <li><ion-icon name="checkmark"></ion-icon>Entrega gratis</li>
               </ul>
             </div>
-            <div><a href="#" class="btn btn-primary">Registrarse</a></div>
+            <div>
+              <a href="#" class="btn btn-primary btn-plan">Registrarse</a>
+            </div>
           </div>
           <div class="price-plan">
             <div>
@@ -295,7 +301,9 @@
                 <li><ion-icon name="checkmark"></ion-icon>Entrega gratis</li>
               </ul>
             </div>
-            <div><a href="#" class="btn btn-secondary">Registrarse</a></div>
+            <div>
+              <a href="#" class="btn btn-secondary btn-plan">Registrarse</a>
+            </div>
           </div>
           <div class="price-plan">
             <div>
@@ -306,14 +314,14 @@
             <div>
               <ul>
                 <li><ion-icon name="checkmark"></ion-icon>1 comida</li>
-                <li>
-                  <ion-icon name="checkmark"></ion-icon>Ordená entre 8am y 12pm
-                </li>
+                <li><ion-icon name="checkmark"></ion-icon>Ordená 8am-12pm</li>
                 <li><ion-icon name="close"></ion-icon></li>
                 <li><ion-icon name="checkmark"></ion-icon>Entrega gratis</li>
               </ul>
             </div>
-            <div><a href="#" class="btn btn-secondary">Registrarse</a></div>
+            <div>
+              <a href="#" class="btn btn-secondary btn-plan">Registrarse</a>
+            </div>
           </div>
         </div>
       </section>
@@ -418,6 +426,7 @@
         </ul>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <script src="./js/app.js"></script>
   </body>
