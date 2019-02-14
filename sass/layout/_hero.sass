@@ -24,7 +24,6 @@ header
                 width: 70%
                 margin: 0 auto
     nav
-        color: #fff
         position: absolute
         top: 0
         left: 0
@@ -67,6 +66,8 @@ header
                     opacity: 1
                     filter: blur(0)
                 a 
+                    color: #fff
+                    text-decoration: none
                     cursor: pointer
                     padding: .5rem
                     background-color: none
@@ -123,16 +124,17 @@ header
             height: 3px
             width: 1.75em
             border-radius: 3px
+            transition: transform cubic-bezier(.68,-.55,.265,1.55) 500ms
         .hamburger::before
             transform: translateY(-8px)
         .hamburger::after
-            transform: translateY(5px)
+            transform: translateY(5px) rotate(-180deg)
     //open classes for toggling menu
     .main-nav-open
         left: 0
     .open .hamburger
-        transform: rotate(-45deg)
+        transform: rotate(-135deg)
     .open .hamburger::before
         opacity: 0
     .open .hamburger::after
-        transform: translateY(-3px) rotate(-450deg)
+        transform: translateY(-3px) rotate(-270deg)

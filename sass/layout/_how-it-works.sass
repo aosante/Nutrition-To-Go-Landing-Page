@@ -1,4 +1,4 @@
-.how-it-works
+#how-it-works
     height: auto
     background-color: $darker-bg
     h2
@@ -85,16 +85,9 @@
             .download-imgs 
                 text-align: left
                 width: 100%
-                @media(max-width: 917px) and (min-width: 770px)
-                    width: 147%
+                display: flex
                 @media(max-width: 770px)
-                    width: 110%
-                    padding: 0
-                    display: flex
-                    .app-img
-                        height: 1em
-                        transform: unset
-                        margin: 0
+                    justify-content: center
                 .app-img
                     width: 10em
                     margin-right: 1em
