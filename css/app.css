@@ -548,8 +548,7 @@ header {
     text-align: center;
     top: 0;
     height: 70vh;
-    transition: left ease-in-out 500ms;
-    border-radius: 4px; }
+    transition: left ease-in-out 500ms; }
     .main-nav li {
       flex: 1;
       background-color: #b3c858;
@@ -561,7 +560,8 @@ header {
       .main-nav li:not(:last-child) {
         border-bottom: 2px solid #fff; }
       .main-nav li a {
-        padding: 2em; }
+        padding: 2em;
+        font-size: 1.2em; }
     .main-nav:hover li {
       transform: unset;
       opacity: unset;
@@ -627,11 +627,23 @@ header {
     margin: .5em;
     flex: 1;
     padding: 0 1.5em;
-    text-align: left; }
+    text-align: left;
+    opacity: 0;
+    transform: scale(0.93); }
     .cards .feature-card .icon {
       color: #b3c858;
       font-size: 3.5em;
       margin-bottom: .25em; }
+  .cards .triggered {
+    animation: fadeIn 2000ms forwards; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.93); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
 
 #plate-grid {
   background-color: grey;
@@ -670,7 +682,8 @@ header {
 
 #how-it-works {
   height: auto;
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  overflow: hidden; }
   #how-it-works h2 {
     margin-top: 1em;
     position: relative; }
@@ -769,6 +782,25 @@ header {
           margin-right: 1em;
           height: 10em; }
 
+.steps .step {
+  position: relative;
+  right: -80em; }
+
+.steps .triggered {
+  animation: fadeIn 1650ms forwards; }
+  .steps .triggered:nth-child(2) {
+    animation-delay: 350ms; }
+  .steps .triggered:nth-child(3) {
+    animation-delay: 650ms; }
+
+@keyframes fadeIn {
+  from {
+    right: -80em;
+    opacity: 0; }
+  to {
+    right: 0;
+    opacity: 1; } }
+
 #cities {
   height: auto;
   padding: 1em 3em 5em; }
@@ -820,6 +852,21 @@ header {
         margin-right: .5em;
         color: #b3c858;
         font-size: 1.15em; }
+
+.city-cards .city-info {
+  transform: scale(0.8);
+  opacity: 0; }
+
+.city-cards .triggered {
+  animation: 1000ms fadeInCities forwards; }
+
+@keyframes fadeInCities {
+  from {
+    opacity: 0;
+    transform: scale(0.8); }
+  to {
+    opacity: 1;
+    transform: scale(1); } }
 
 #testimonials {
   height: auto; }
@@ -946,6 +993,21 @@ header {
         color: #b3c858;
         font-size: .8em;
         margin-right: .5em; }
+
+#premium-plan {
+  opacity: 0;
+  transform: rotate(-360deg) scale(0.9); }
+
+.premium-triggered {
+  animation: rotateIn 2000ms forwards cubic-bezier(0.61, 0.23, 0.34, 1.19); }
+
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: rotate(-360deg) scale(0.9); }
+  to {
+    opacity: 1;
+    transform: rotate(0) scale(1); } }
 
 #contact-us h2 {
   margin-top: 1em;

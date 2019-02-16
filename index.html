@@ -16,10 +16,10 @@
       <nav>
         <img src="./img/logo.jpg" alt="Nutrition to Go logo" />
         <ul class="main-nav">
-          <li><a href="#features">Conocenos</a></li>
-          <li><a href="#how-it-works">¿Cómo funciona?</a></li>
-          <li><a href="#cities">Provincias</a></li>
-          <li><a href="#contact-us">Contacto</a></li>
+          <li><a class="nav-link" href="#features">Conocenos</a></li>
+          <li><a class="nav-link" href="#how-it-works">¿Cómo funciona?</a></li>
+          <li><a class="nav-link" href="#cities">Provincias</a></li>
+          <li><a class="nav-link" href="#contact-us">Contacto</a></li>
         </ul>
         <div class="menu-toggle">
           <div class="hamburger"></div>
@@ -42,7 +42,7 @@
           ocupad@, y que el tiempo para cocinar a veces es escaso. Probálo y sé
           testigo de los resultados
         </p>
-        <div class="cards">
+        <div class="cards animated-parent">
           <div class="feature-card">
             <ion-icon name="infinite" class="icon"></ion-icon>
             <h3>365 días</h3>
@@ -104,7 +104,7 @@
         <h2>¿Cómo funciona? &mdash; Así de fácil</h2>
         <div class="how-it-works-container">
           <img class="phone" src="./img/phone.png" alt="IPhone image" />
-          <div class="steps">
+          <div class="steps animated-parent">
             <!-- paragraphs need to be set to display inline   -->
             <div class="step">
               <span>1</span>
@@ -130,7 +130,7 @@
       </section>
       <section id="cities">
         <h2>Actualmente entregamos en estas provincias</h2>
-        <div class="city-cards">
+        <div class="city-cards animated-parent">
           <div class="city-info">
             <figure>
               <img src="./img/heredia.jpg" alt="Foto de Heredia" />
@@ -168,7 +168,7 @@
           </div>
           <div class="city-info">
             <figure>
-              <img src="./img/cartago.jpg" alt="Foto de Cartago" />
+              <img class="test" src="./img/cartago.jpg" alt="Foto de Cartago" />
             </figure>
             <h3>Cartago</h3>
             <ul>
@@ -263,7 +263,7 @@
       <section id="pricing-plans">
         <h2>Comenzá a comer bien hoy</h2>
         <div class="plans-container">
-          <div class="price-plan">
+          <div class="price-plan" id="premium-plan">
             <div>
               <h3>Premium</h3>
               <p class="plan-price">$300 <span>/ mes</span></p>

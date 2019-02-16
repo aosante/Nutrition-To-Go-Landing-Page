@@ -53,6 +53,17 @@
                 color: $main
                 font-size: .8em
                 margin-right: .5em
-                
-           
-        
+
+//animations
+#premium-plan
+    opacity: 0 
+    transform: rotate(-360deg) scale(.9)
+.premium-triggered
+    animation: rotateIn 2000ms forwards cubic-bezier(.61,.23,.34,1.19)
+@keyframes rotateIn    
+  from
+    opacity: 0
+    transform: rotate(-360deg) scale(.9)
+  to
+    opacity: 1
+    transform: rotate(0) scale(1)    

@@ -28,7 +28,19 @@
         flex: 1  
         padding: 0 1.5em
         text-align: left
+        opacity: 0
+        transform: scale(0.93)
         .icon
             color: $main
             font-size: 3.5em
             margin-bottom: .25em
+    .triggered
+        animation: fadeIn 2000ms forwards 
+    @keyframes fadeIn
+        0%
+          opacity: 0
+          transform: scale(0.93)
+        100%
+            opacity: 1
+            transform: scale(1)
+
