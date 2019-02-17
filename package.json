@@ -5,11 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass --watch sass -o css"
+    "start": "nodemon server.js",
+    "sass": "node-sass --watch public/sass -o public/css"
   },
   "author": "Andrés Osante",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.11.0"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "node-sass": "^4.11.0",
+    "nodemailer": "^5.1.1",
+    "nodemon": "^1.18.10"
   }
 }
