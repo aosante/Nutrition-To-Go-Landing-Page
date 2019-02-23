@@ -320,6 +320,9 @@ main {
   display: flex;
   flex-direction: column; }
 
+html {
+  scroll-behavior: smooth; }
+
 h1, h2, h3, h4, h5, h6, p {
   margin: 0 0 .75em; }
 
@@ -595,6 +598,19 @@ header {
     opacity: 0; }
   .open .hamburger::after {
     transform: translateY(-3px) rotate(-270deg); } }
+
+.sticky {
+  background: #b3c858;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  right: 0;
+  height: 15vh;
+  z-index: 9999; }
+
+#logo {
+  height: 7em;
+  width: 6em; }
 
 #features {
   height: auto; }

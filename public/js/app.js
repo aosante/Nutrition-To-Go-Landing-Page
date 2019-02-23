@@ -1,7 +1,7 @@
 //parallax effect
 const parallaxBg = document.querySelector('.parallax-bg');
 const parallaxBg2 = document.querySelector('.parallax-bg2');
-window.addEventListener('scroll', _.throttle(parallax));
+window.addEventListener('scroll', _.throttle(parallax, 10));
 
 function parallax() {
   let scroll = window.scrollY;
@@ -75,5 +75,24 @@ function activatePlanAnimation() {
     plan.classList.add('premium-triggered');
   }
 }
+
+//---------------------------------------------------------
+
+//Sticky navbar on certain scroll position--------------------
+const heroSection = document.querySelector('header');
+function addFixedNav() {
+  const navig = document.querySelector('nav');
+  const logo = document.querySelector('.sticky-logo');
+  let scroll = window.scrollY;
+  let heroBottom = heroSection.offsetTop + heroSection.scrollHeight;
+  if (scroll > heroBottom) {
+    navig.classList.add('sticky');
+    logo.setAttribute('id', 'logo');
+  } else {
+    navig.classList.remove('sticky');
+    logo.removeAttribute('id');
+  }
+}
+window.addEventListener('scroll', _.throttle(addFixedNav, 100));
 
 //---------------------------------------------------------
