@@ -145,9 +145,18 @@ nav
     top: 0
     width: 100%
     right: 0
-    height: 15vh
+    height: 12.7vh
     z-index: 9999
+    @media(max-width: 760px)
+        height: 10vh
+        align-items: flex-start
 
 #logo
-    height: 7em
-    width: 6em
+    height: 5.9em
+    // width: em
+    @media(max-width: 760px)
+        position: relative
+        height: 3.4em
+        border-radius: 40px
+        width: 3em
+        top: .1em
